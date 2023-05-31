@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag Name Selector</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div>
+      <p id="para1">Blue Color</p>
+      <p id="para2">Green Color</p>
+      <p id="para3">Red Color</p>
+      <p id="para4">Yellow Color</p>
+      <p id="para5">Purple Color</p>
+    </div>
+    <script>
+      const addnew = document.createElement("p");
+      const para1 = document.querySelector("#para1");
+      const para2 = document.querySelector("#para2");
+      const para3 = document.querySelector("#para3");
+      const para4 = document.querySelector("#para4");
+      const para5 = document.querySelector("#para5");
+      const text = document.createTextNode(
+        "The Paragraph Element Selected are: " +
+          para1.innerHTML +
+          ", " +
+          para2.innerHTML +
+          ", " +
+          para3.innerHTML +
+          ", " +
+          para4.innerHTML +
+          ", " +
+          para5.innerHTML
+      );
+      addnew.appendChild(text);
+      const divElement = document.querySelector("div");
+      document.body.insertBefore(addnew, divElement);
+    </script>
+  </body>
+</html>

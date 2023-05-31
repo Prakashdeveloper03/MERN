@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag Name Selector</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div>
+      <p id="para1">Blue Color</p>
+      <p id="para2">Green Color</p>
+      <p id="para3">Red Color</p>
+      <p id="para4">Yellow Color</p>
+      <p id="para5">Purple Color</p>
+    </div>
+    <script>
+      let para = document.querySelectorAll("p");
+      para.forEach((paras) => {
+        console.log(paras.innerHTML + ", ");
+      });
+    </script>
+  </body>
+</html>

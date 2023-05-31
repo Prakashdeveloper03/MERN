@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag Name Selector</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div>
+      <p id="para1">Blue Color</p>
+      <p id="para2">Green Color</p>
+      <p id="para3">Red Color</p>
+      <p id="para4">Yellow Color</p>
+      <p id="para5">Purple Color</p>
+    </div>
+    <script>
+      let para = document.querySelectorAll("p");
+      for (let i = 0; i < para.length; i++) {
+        para[i].style.color = "blue";
+        para[i].style.background = "white";
+        para[i].style.padding = "10px 20px";
+        para[i].style.margin = "20px";
+        para[i].style.border = "black solid";
+        para[i].style.boxShadow = "3px 5px 5px black";
+        para[i].style.fontFamily = "Impact,Charcoal,sans-serif";
+        para[i].style.fontSize = "x-large";
+      }
+    </script>
+  </body>
+</html>
