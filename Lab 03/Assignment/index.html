@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ImageCart.com</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>IMAGE CART</h1>
+    <div
+      style="
+        border: 1px solid #ddd;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+      "
+    >
+      <div class="image-container">
+        <div class="image">
+          <img class="img1" src="images/blue.jpg" alt="Image 1" />
+          <div class="image-info">
+            <h3>Blue Image</h3>
+            <p>Price: $10</p>
+            <p>This is a blue image.</p>
+          </div>
+        </div>
+        <div class="image">
+          <img class="img2" src="images/green.jpeg" alt="Image 2" />
+          <div class="image-info">
+            <h3>Green Image</h3>
+            <p>Price: $15</p>
+            <p>This is a green image.</p>
+          </div>
+        </div>
+      </div>
+      <form id="addImageForm">
+        <input type="text" id="nameInput" placeholder="Name" required />
+        <input type="text" id="priceInput" placeholder="Price" required />
+        <textarea
+          id="descriptionInput"
+          placeholder="Description"
+          required
+        ></textarea>
+        <input type="file" id="imageInput" required />
+        <button type="submit">Add Image</button>
+      </form>
+      <button id="addcart">Add to Cart</button>
+      <div class="selected-container"></div>
+      <div class="selected-container"></div>
+
+      <p id="totalPrice"></p>
+      <button id="confirmPurchase">Confirm Purchase</button>
+    </div>
+  </body>
+</html>
